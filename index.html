@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="icon/ChatGPT Image May 13, 2025, 07_27_49 PM.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annishofie - Premium Sleepwear</title>
+    <title>Annishofie – Tidur Auto Nyenyak, Bangun Auto Fresh</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -228,6 +229,23 @@
                     <img src="img/aset1.png" alt="Annishofie Sleepwear" class="img-fluid hero-img">
                 </div>
             </div>
+            <h1 id="typing"></h1>
+
+<script>
+  let text = "Selamat datang di Annishofie!";
+  let i = 0;
+
+  function typeEffect() {
+    if (i < text.length) {
+      document.getElementById("typing").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeEffect, 100);
+    }
+  }
+
+  typeEffect();
+</script>
+
         </div>
     </section>
 
@@ -815,6 +833,31 @@
                 // Here you would add actual filtering logic
             });
         });
+
+        /*let defaultTitle = "Annishofie | Premium Sleepwear";
+        let afkTitle = "Halo👀? Masih di sana? ";
+        let timeout;
+
+        function resetTitle() {
+            document.title = defaultTitle;
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                document.title = afkTitle;
+            }, 5000); // Ganti title setelah 5 detik tanpa interaksi
+        }
+
+        document.addEventListener("mousemove", resetTitle);
+        document.addEventListener("keydown", resetTitle);*/
+
+  let titles = ["😴 Annishofie | Premium Sleepwear", "🌙 Tidur Nyaman, Bangun Kece!", "✨ Baju Tidur, Nyaman Parah!"];
+  let index = 0;
+
+  setInterval(() => {
+    document.title = titles[index];
+    index = (index + 1) % titles.length;
+  }, 2000); // Ganti setiap 2 detik
+
+
     </script>
 </body>
 </html>
