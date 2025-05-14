@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - Annishofie</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2a2a2a;
+            --secondary: #5a5a5a;
+            --accent: #e8c4c4;
+            --light-bg: #f9f3f3;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary);
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: var(--primary);
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            bottom: 0;
+            left: 0;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover:after, .nav-link.active:after {
+            width: 100%;
+        }
+
+        .policy-header {
+            background: linear-gradient(135deg, #f9f3f3 0%, #f0e6e6 100%);
+            padding: 80px 0 60px;
+            margin-bottom: 40px;
+        }
+
+        .policy-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .policy-content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 30px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .footer {
+            background: var(--primary);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="font-size: 1.8rem;">Annishofie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="policyDropdown" role="button" data-bs-toggle="dropdown">
+                            Kebijakan
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="privacy.html">Kebijakan Privasi</a></li>
+                            <li><a class="dropdown-item" href="accessibility.html">Aksesibilitas</a></li>
+                            <li><a class="dropdown-item" href="shipping.html">Pengiriman</a></li>
+                            <li><a class="dropdown-item" href="returns.html">Pengembalian</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Policy Header -->
+    <header class="policy-header">
+        <div class="container text-center">
+            <h1 class="policy-title">Kebijakan Privasi</h1>
+            <p class="lead">Terakhir diperbarui: 13 Mei 2025</p>
+        </div>
+    </header>
+
+    <!-- Policy Content -->
+    <main class="container">
+        <div class="policy-content">
+            <!-- Privacy Policy Content -->
+            <section>
+                <h2 class="section-title">1. Pengumpulan Informasi</h2>
+                <p>Kami mengumpulkan informasi pribadi ketika Anda melakukan pembelian, mendaftar newsletter, atau berinteraksi dengan situs kami. Informasi yang dikumpulkan mungkin termasuk:</p>
+                <ul>
+                    <li>Nama lengkap</li>
+                    <li>Alamat email</li>
+                    <li>Alamat pengiriman</li>
+                    <li>Informasi pembayaran</li>
+                    <li>Data browsing behavior</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="section-title">2. Penggunaan Informasi</h2>
+                <p>Informasi yang kami kumpulkan digunakan untuk:</p>
+                <ul>
+                    <li>Memproses transaksi dan pengiriman</li>
+                    <li>Mengirim pembaruan produk dan promosi</li>
+                    <li>Meningkatkan pengalaman pengguna</li>
+                    <li>Analisis dan pengembangan produk</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="section-title">3. Perlindungan Data</h2>
+                <p>Kami menerapkan berbagai langkah keamanan untuk melindungi informasi pribadi Anda:</p>
+                <ul>
+                    <li>Enkripsi data sensitif</li>
+                    <li>Pembatasan akses internal</li>
+                    <li>Audit keamanan berkala</li>
+                    <li>Prosedur penanganan data yang aman</li>
+                </ul>
+                <p>Data Anda tidak akan dijual, dipertukarkan, atau ditransfer ke pihak ketiga tanpa izin Anda, kecuali untuk keperluan penyediaan produk/layanan yang diminta.</p>
+            </section>
+
+            <section>
+                <h2 class="section-title">4. Cookie dan Teknologi Pelacakan</h2>
+                <p>Kami menggunakan cookie untuk:</p>
+                <ul>
+                    <li>Mengingat preferensi Anda</li>
+                    <li>Analisis lalu lintas situs</li>
+                    <li>Meningkatkan pengalaman berbelanja</li>
+                </ul>
+                <p>Anda dapat menonaktifkan cookie melalui pengaturan browser Anda, namun beberapa fitur situs mungkin tidak berfungsi optimal.</p>
+            </section>
+
+            <section>
+                <h2 class="section-title">5. Perubahan Kebijakan</h2>
+                <p>Kami dapat memperbarui kebijakan privasi ini secara berkala. Perubahan akan diberitahukan melalui email atau pemberitahuan di situs kami. Penggunaan terus menerus setelah perubahan berarti Anda menerima kebijakan yang diperbarui.</p>
+            </section>
+
+            <section>
+                <h2 class="section-title">6. Hubungi Kami</h2>
+                <p>Untuk pertanyaan tentang kebijakan privasi ini, silakan hubungi kami melalui:</p>
+                <p>Email: <a href="mailto:survaivell@gmail.com">survaivell@gmail.com</a><br>
+                Telepon: 0818-4044-22</p>
+            </section>
+        </div>
+    </main>
+
+    <main class="container">
+    <div class="policy-content">
+        <section>
+            <h2 class="section-title">Komitmen Aksesibilitas</h2>
+            <p>Annishofie berkomitmen untuk menyediakan pengalaman berbelanja online yang dapat diakses oleh semua pelanggan, termasuk mereka dengan disabilitas.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Standar Aksesibilitas</h2>
+            <p>Kami berusaha memenuhi standar WCAG 2.1 Level AA dengan:</p>
+            <ul>
+                <li>Struktur navigasi yang konsisten</li>
+                <li>Kontras warna yang memadai</li>
+                <li>Alternatif teks untuk gambar</li>
+                <li>Kompatibilitas dengan pembaca layar</li>
+                <li>Keyboard navigable interface</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Peningkatan Berkelanjutan</h2>
+            <p>Kami terus melakukan pengujian dan perbaikan aksesibilitas. Jika Anda mengalami kesulitan mengakses bagian mana pun dari situs kami, silakan hubungi kami.</p>
+        </section>
+    </div>
+</main>
+
+<main class="container">
+    <div class="policy-content">
+        <section>
+            <h2 class="section-title">1. Area Pengiriman</h2>
+            <p>Kami mengirim ke seluruh wilayah Indonesia melalui jasa pengiriman terpercaya. Untuk pengiriman internasional, silakan hubungi customer service.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">2. Waktu Pengolahan</h2>
+            <p>Pesanan akan diproses dalam 1-3 hari kerja setelah pembayaran dikonfirmasi. Untuk produk custom, waktu proses mungkin lebih lama.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">3. Estimasi Pengiriman</h2>
+            <ul>
+                <li>Jabodetabek: 1-2 hari kerja</li>
+                <li>Pulau Jawa: 2-4 hari kerja</li>
+                <li>Luar Jawa: 3-7 hari kerja</li>
+            </ul>
+            <p>Waktu pengiriman dapat berubah tergantung kondisi cuaca dan kebijakan kurir.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">4. Biaya Pengiriman</h2>
+            <p>Biaya pengiriman dihitung otomatis berdasarkan berat paket dan lokasi tujuan. Gratis ongkir untuk pembelian di atas Rp500.000.</p>
+        </section>
+    </div>
+</main>
+
+<main class="container">
+    <div class="policy-content">
+        <section>
+            <h2 class="section-title">1. Syarat Pengembalian</h2>
+            <p>Produk dapat dikembalikan dalam kondisi:</p>
+            <ul>
+                <li>Belum digunakan/dicuci</li>
+                <li>Tag masih terpasang</li>
+                <li>Kemasan asli lengkap</li>
+                <li>Dikembalikan dalam 7 hari setelah diterima</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">2. Proses Pengembalian</h2>
+            <ol>
+                <li>Hubungi customer service untuk mendapatkan authorization</li>
+                <li>Kemas produk dengan baik</li>
+                <li>Kirim ke alamat yang diberikan</li>
+                <li>Proses refund akan dilakukan setelah produk kami terima</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2 class="section-title">3. Kebijakan Refund</h2>
+            <p>Dana akan dikembalikan melalui metode pembayaran asal dalam 3-5 hari kerja setelah produk diterima dan diverifikasi. Biaya pengiriman kembali tidak dapat direfund.</p>
+        </section>
+    </div>
+</main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-white mb-4">Annishofie</h3>
+                    <p>Menyediakan pakaian tidur berkualitas tinggi untuk kenyamanan maksimal dan gaya yang elegan.</p>
+                    <div class="mt-3">
+                        <h5 class="text-white mb-3">Follow Us</h5>
+                        <div class="d-flex">
+                            <a href="https://www.instagram.com/annishofie_/" class="social-icon me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.tiktok.com/@annishofie" class="social-icon me-2"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white-50">Beranda</a></li>
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white-50">Produk</a></li>
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white-50">Tentang Kami</a></li>
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white-50">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Kategori</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Piyama</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Nightgown</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Robe</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Aksesoris</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-white mb-4">Kebijakan</h5>
+                    <div class="footer-links">
+                        <a href="kebijakan.html" class="me-3">Privacy Policy</a>
+                        <a href="kebijakan.html" class="me-3">Accessibility</a>
+                        <a href="kebijakan.html" class="me-3">Shipping</a>
+                        <a href="kebijakan.html" class="me-3">Returns</a>
+                    </div>
+                    
+                    <h5 class="text-white mt-4 mb-3">Metode Pembayaran</h5>
+                    <div class="payment-methods">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/2560px-Bank_Central_Asia.svg.png" alt="BCA" class="payment-logo">
+                        <img src="footerpaymentlogo/BRI_2020.svg.png" alt="BRI" class="payment-logo">
+                        <img src="footerpaymentlogo/Bank_Syariah_Indonesia.svg.png" alt="BSI" class="payment-logo">
+                        <img src="footerpaymentlogo/Logo_QRIS.svg.png" alt="QRIS" class="payment-logo">
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row align-items-center">
+                <!-- Copyright Section -->
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="developer-credit">
+                    <a href="https://bmdustudio" target="_blank" class="studio-link text-white">
+                        © 2025 Annishofie.
+                        <span class="studio-icon2">✨</span>
+                    </a> 
+                    </span>
+                        <span class="developer-credit">
+                            Developed by 
+                            <a href="https://bmdustudio" target="_blank" class="studio-link text-white">
+                                Bmdu Studio
+                                <span class="studio-icon">✨</span>
+                            </a>
+                        </span>
+                </div>
+                
+                <!-- Contact Section -->
+                <div class="col-md-6">
+                    <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-end align-items-center">
+                        <a href="mailto:survaireli@gmail.com" class="text-white">
+                            <i class="fas fa-envelope me-2"></i>survaivell@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

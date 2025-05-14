@@ -220,31 +220,15 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 fade-in">
-                    <h1 class="hero-title">Bahan Adem Buat Tidur Nyenyak</h1>
-                    <p class="hero-subtitle">Pilihan Pakaian Tidur Berkualitas untuk Kenyamanan Maksimal</p>
+                    <h1 class="hero-title">Bahan Adem Buat Tidur Nyenyak🤩</h1>
+                    <p class="hero-subtitle">Pilihan Pakaian Tidur Berkualitas untuk Kenyamanan Maksimal lho~🥰</p>
                     <a href="#shop" class="btn btn-dark btn-lg me-2">Belanja Sekarang</a>
-                    <a href="#categories" class="btn btn-outline-dark btn-lg">Jelajahi Koleksi</a>
+                    <a href="tatapemesanan.html" class="btn btn-outline-dark btn-lg">Cara Memesan</a>
                 </div>
                 <div class="col-lg-6 fade-in delay-1">
                     <img src="img/aset1.png" alt="Annishofie Sleepwear" class="img-fluid hero-img">
                 </div>
             </div>
-            <h1 id="typing"></h1>
-
-<script>
-  let text = "Selamat datang di Annishofie!";
-  let i = 0;
-
-  function typeEffect() {
-    if (i < text.length) {
-      document.getElementById("typing").innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typeEffect, 100);
-    }
-  }
-
-  typeEffect();
-</script>
 
         </div>
     </section>
@@ -259,9 +243,9 @@
             <div class="row">
                 <div class="col-md-4 mb-4 fade-in delay-1">
                     <div class="category-card">
-                        <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Piyama">
+                        <img src="img/aset3.png" class="img-fluid" alt="Piyama">
                         <div class="p-4">
-                            <h4>Set Piyama</h4>
+                            <h4>Daster</h4>
                             <p class="text-muted">Nyaman untuk tidur malam yang tenang</p>
                             <a href="#" class="btn btn-sm btn-outline-dark">Lihat Koleksid</a>
                         </div>
@@ -269,9 +253,9 @@
                 </div>
                 <div class="col-md-4 mb-4 fade-in delay-2">
                     <div class="category-card">
-                        <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Nightgown">
+                        <img src="img/aset1.png" class="img-fluid" alt="Nightgown">
                         <div class="p-4">
-                            <h4>Nightgown</h4>
+                            <h4>Baju Tidur</h4>
                             <p class="text-muted">Elegan dan nyaman dipakai</p>
                             <a href="#" class="btn btn-sm btn-outline-dark">Lihat Koleksi</a>
                         </div>
@@ -279,9 +263,9 @@
                 </div>
                 <div class="col-md-4 mb-4 fade-in delay-3">
                     <div class="category-card">
-                        <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Robe">
+                        <img src="img/aset2pendek.png" class="img-fluid" alt="Robe">
                         <div class="p-4">
-                            <h4>Robe Santai</h4>
+                            <h4>Baju Tidur Pendek</h4>
                             <p class="text-muted">Sempurna untuk bersantai di rumah</p>
                             <a href="#" class="btn btn-sm btn-outline-dark">Lihat Koleksi</a>
                         </div>
@@ -645,22 +629,15 @@
                         <p class="mb-0">Berlangganan newsletter kami untuk mendapatkan penawaran eksklusif</p>
                     </div>
                     <div class="col-lg-6">
-                        <form class="row g-2">
+                        <form onsubmit="openGmail(event)">
                             <div class="col-md-8">
-                                <input type="email" class="form-control form-control-lg" placeholder="Alamat Email Anda">
+                                <input type="email" id="emailUser" class="form-control form-control-lg" placeholder="Alamat Email Anda" required>
                             </div>
-                            <div class="col-md-4">
-                                <button type="submit" class="btn btn-dark btn-lg w-100">Langganan!</button>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="newsletterCheck">
-                                    <label class="form-check-label small" for="newsletterCheck">
-                                        Ya, kirimi saya newsletter Annishofie
-                                    </label>
-                                </div>
+                            <div class="col-md-4" style="padding-top: 12px;">
+                                <button type="submit" class="btn btn-dark btn-lg w-100">Kirim</button>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -690,21 +667,22 @@
                 <div class="col-lg-6">
                     <div class="bg-white p-4 rounded shadow-sm">
                         <h4 class="mb-4">Kirim Pesan</h4>
-                        <form>
+                        <form onsubmit="sendToWhatsApp(event)">
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Nama Lengkap kamu lho ~">
+                                <input type="text" id="nama" class="form-control" placeholder="Nama Lengkap kamu lho ~" required>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Jangan Lupa Emailnya">
+                                <input type="email" id="email" class="form-control" placeholder="Jangan Lupa Emailnya" required>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Subjek nya biar jelas ~">
+                                <input type="text" id="subjek" class="form-control" placeholder="Subjek nya biar jelas ~" required>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="4" placeholder="Pesan Kamu disini😌"></textarea>
+                                <textarea id="pesan" class="form-control" rows="4" placeholder="Pesan Kamu disini😌" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-dark">Kirim Pesan</button>
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -749,11 +727,10 @@
                 <div class="col-lg-4 col-md-4">
                     <h5 class="text-white mb-4">Kebijakan</h5>
                     <div class="footer-links">
-                        <a href="#" class="me-3">Privacy Policy</a>
-                        <a href="#" class="me-3">Accessibility</a>
-                        <a href="#" class="me-3">Shipping</a>
-                        <a href="#" class="me-3">Returns</a>
-                        <a href="#">Terms</a>
+                        <a href="kebijakan.html" class="me-3">Privacy Policy</a>
+                        <a href="kebijakan.html" class="me-3">Accessibility</a>
+                        <a href="kebijakan.html" class="me-3">Shipping</a>
+                        <a href="kebijakan.html" class="me-3">Returns</a>
                     </div>
                     
                     <h5 class="text-white mt-4 mb-3">Metode Pembayaran</h5>
@@ -834,7 +811,7 @@
             });
         });
 
-        /*let defaultTitle = "Annishofie | Premium Sleepwear";
+        let defaultTitle = "Annishofie | Premium Sleepwear";
         let afkTitle = "Halo👀? Masih di sana? ";
         let timeout;
 
@@ -847,16 +824,48 @@
         }
 
         document.addEventListener("mousemove", resetTitle);
-        document.addEventListener("keydown", resetTitle);*/
+        document.addEventListener("keydown", resetTitle);
 
-  let titles = ["😴 Annishofie | Premium Sleepwear", "🌙 Tidur Nyaman, Bangun Kece!", "✨ Baju Tidur, Nyaman Parah!"];
+  /*let titles = ["😴 Annishofie | Premium Sleepwear", "🌙 Tidur Nyaman, Bangun Kece!", "✨ Baju Tidur, Nyaman Parah!"];
   let index = 0;
 
   setInterval(() => {
     document.title = titles[index];
     index = (index + 1) % titles.length;
-  }, 2000); // Ganti setiap 2 detik
+  }, 2000); // Ganti setiap 2 detik */
 
+
+    //sendpesan
+    function sendToWhatsApp(event) {
+    event.preventDefault(); // Biar gak reload page
+
+    const nama = document.getElementById("nama").value;
+    const email = document.getElementById("email").value;
+    const subjek = document.getElementById("subjek").value;
+    const pesan = document.getElementById("pesan").value;
+
+    const nomorAdmin = "62818404422"; // Ganti dengan nomor admin (format internasional, tanpa tanda +)
+
+    const message = `Halo Admin, saya ingin menghubungi:\n\n🧑 Nama: ${nama}\n📧 Email: ${email}\n📌 Subjek: ${subjek}\n📝 Pesan: ${pesan}`;
+
+    const url = `https://wa.me/${nomorAdmin}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, '_blank');
+}
+
+
+//email
+function openGmail(event) {
+    event.preventDefault();
+    const email = document.getElementById("emailUser").value;
+
+    const subject = "Langganan Newsletter Annishofie";
+    const body = `Halo Admin,\n\nSaya ingin berlangganan newsletter.\n\nEmail saya: ${email}`;
+
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=survaivell@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.open(gmailUrl, '_blank');
+}
 
     </script>
 </body>
