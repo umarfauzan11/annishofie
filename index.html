@@ -204,8 +204,53 @@
                     </li>
                 </ul>
                 <div class="ms-3 d-flex">
-                    <a href="#" class="btn btn-outline-dark me-2"><i class="fas fa-search"></i></a>
-                    <a href="#" class="btn btn-outline-dark me-2"><i class="fas fa-user"></i></a>
+                    <div class="search-container position-relative">
+                        <input type="text" class="form-control search-input" placeholder="Search...">
+                        <button class="btn btn-outline-dark search-btn" onclick="toggleSearch()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                            <style>
+                            .search-container {
+                            display: flex;
+                            align-items: center;
+                            transition: width 0.4s ease;
+                            }
+
+                            .search-input {
+                            width: 0;
+                            opacity: 0;
+                            transition: width 0.4s ease, opacity 0.4s ease;
+                            border: none;
+                            border-bottom: 1px solid #ccc;
+                            background: transparent;
+                            margin-right: 8px;
+                            padding: 4px 8px;
+                            }
+
+                            .search-container.active .search-input {
+                            width: 200px;
+                            opacity: 1;
+                            background: white;
+                            border: 1px solid #ccc;
+                            border-radius: 4px;
+                            }
+                            </style>
+
+                                <script>
+                                function toggleSearch() {
+                                const container = document.querySelector('.search-container');
+                                container.classList.toggle('active');
+
+                                const input = container.querySelector('.search-input');
+                                if (container.classList.contains('active')) {
+                                    input.focus();
+                                } else {
+                                    input.value = '';
+                                }
+                                }
+                                </script>
+                    </div>
+                    <a style="margin-left: 8px;" href="#" class="btn btn-outline-dark me-2"><i class="fas fa-user"></i></a>
                     <a href="#" class="btn btn-outline-dark position-relative">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
@@ -712,7 +757,7 @@
                         <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Beranda</a></li>
                         <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Produk</a></li>
                         <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Tentang Kami</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Kontak</a></li>
+                        <li class="mb-2"><a href="kontak.html" class="text-decoration-none text-white-50">Kontak</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
